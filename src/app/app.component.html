@@ -1,0 +1,30 @@
+<div class="container">
+<app-login></app-login>
+<app-list></app-list>
+<ul>
+  <li><a routerLink="login">go to log in page</a></li>
+  <li><a routerLink="list">go to list in page</a></li>
+</ul>
+<router-outlet></router-outlet>
+<h1>admin part</h1>
+<ul>
+  <li><a routerLink="admin/login-on">go to log in page on</a></li>
+  <li><a routerLink="admin/list-on">go to list in page on</a></li>
+</ul>
+<router-outlet></router-outlet>
+<h1>user part</h1>
+<ul>
+  
+  <li><a routerLink="user/login-on">go to log in page on</a></li>
+  <li><a routerLink="user/list-on">go to list in page on</a></li>
+</ul>
+<router-outlet></router-outlet>
+<button class="btn btn-success" (click)="loadAdmin()">Admin </button>
+<button class="btn btn-secondary" (click)="loadUser()">User</button>
+</div>
+
+<!-- <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+  <input type="text" name ="email" ngModel>
+  <input type="password" name="password" ngModel>
+  <button type="submit" > login </button>
+</form> -->
